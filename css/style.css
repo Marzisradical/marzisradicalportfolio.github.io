@@ -1,0 +1,799 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?5yt2dc');
+    src:  url('../fonts/icomoon.eot?5yt2dc#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?5yt2dc') format('truetype'),
+      url('../fonts/icomoon.woff?5yt2dc') format('woff'),
+      url('../fonts/icomoon.svg?5yt2dc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-freecodecamp:before {
+    content: "\e906";
+    color: #006400;
+  }
+  .icon-microsoftword:before {
+    content: "\e907";
+    color: #2b579a;
+  }
+  .icon-microsoftpowerpoint:before {
+    content: "\e908";
+    color: #d24726;
+  }
+  .icon-microsoftexcel:before {
+    content: "\e909";
+    color: #217346;
+  }
+  .icon-arduino:before {
+    content: "\e90a";
+    color: #00979d;
+  }
+  .icon-javascript:before {
+    content: "\e90b";
+    color: #f7df1e;
+  }
+  .icon-html5:before {
+    content: "\e90c";
+    color: #e34f26;
+  }
+  .icon-css3:before {
+    content: "\e90d";
+    color: #1572b6;
+  }
+  .icon-document-code:before {
+    content: "\e900";
+  }
+  .icon-envelope-square:before {
+    content: "\e901";
+  }
+  .icon-github-square:before {
+    content: "\e902";
+  }
+  .icon-laptop:before {
+    content: "\e903";
+  }
+  .icon-linkedin:before {
+    content: "\e904";
+  }
+  .icon-brand:before {
+    content: "\e904";
+  }
+  .icon-social:before {
+    content: "\e904";
+  }
+  .icon-embed:before {
+    content: "\e905";
+  }
+  .icon-code:before {
+    content: "\e905";
+  }
+  .icon-html:before {
+    content: "\e905";
+  }
+  .icon-xml:before {
+    content: "\e905";
+  }
+/* END ICON */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+
+/* HEADER */
+
+.top-header {
+    background-color: black;
+}
+
+
+.top-header a{
+    color: white;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-shadow: 3px 3px 3px #222;
+}
+ 
+
+.top-header a:hover {
+    color: white;
+    background-color: #EF2085;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px black;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #EF2085;
+    box-shadow: 0px 15px 20px white;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.a-link {
+    color: white;
+}
+
+.a-link:hover {
+    color: white;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 20rem;
+    z-index: 999;
+    background-color: black;
+    text-align: center;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .top-header a {
+        font-size: 14px;
+    }
+}
+
+/* END HEADER */
+
+/* SECTION 1 */
+.section1 {
+    background-image: url("../media/fabian-moller-gI7zgb80QWY-unsplash.jpg");
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .section1 {
+        height: 800px;
+    }
+}
+
+
+.S1blockone, .S1blocktwo {
+    position: absolute;
+    top: 160px;
+    color: white; 
+}
+
+.intro {
+    margin-top: 40px;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 3px 3px 3px #222;
+    font-size: 70px;
+}
+
+.intro-text {
+    font-family: 'Courier Prime', monospace;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px #222;
+    color: white;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .S1blocktwo {
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 50px;
+    }
+    .intro-text {
+        font-size: 30px;
+    }
+   
+}
+
+.S1blockone {
+    text-align: center;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 50%;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .headshot {
+        width: 250px;
+    }
+}
+
+/* SECTION 2 */
+.section2 {
+    background: rgb(0,0,0);
+    background: linear-gradient(176deg, rgba(0,0,0,1) 1%, rgba(0,0,0,1) 22%, rgba(0,11,7,1) 43%, rgba(1,34,22,1) 65%, rgba(1,45,29,1) 83%, rgba(2,56,36,1) 100%);
+    height: 850px;
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .section2 {
+        height: 90em;
+    }
+}
+
+.S2blockone{
+    padding: 15px;
+}
+
+
+.block1 {
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px #222;
+    color: white;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .block1 {
+        font-size: 40px;
+    }
+}
+
+.block2 h2 {
+    font-family: 'Aclonica', sans-serif;
+}
+
+.block2 p {
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
+}
+
+
+.two {
+    padding: 30px;
+}
+
+.blocks {
+    background-color: #EF2085;
+    text-align: center;
+    text-shadow: 3px 3px 3px #222;
+    padding: 40px;
+    height: 430px;
+    box-shadow: 3px 3px #222;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .blocks {
+        height: 300px;
+    }
+}
+
+.blocks p {
+    color: white;
+    text-shadow: 3px 3px 3px #222;
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blocks p {
+        font-size: 14px;
+    }
+    
+}
+
+.icon {
+    font-size: 100px;
+    color: #00260E;
+}
+
+.S2blockthree {
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.S2blockthree p {
+    font-family: 'Courier Prime', monospace;
+    text-shadow: 3px 3px 3px #222;
+    font-size: 20px;
+}
+
+
+/* SECTION 3 */
+.section3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(8deg, rgba(0,0,0,1) 1%, rgba(0,0,0,1) 22%, rgba(0,11,7,1) 43%, rgba(1,34,22,1) 65%, rgba(1,45,29,1) 83%, rgba(2,56,36,1) 100%);
+    height: 125em;
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .section3 {
+        height: 116em;
+    }
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section3 {
+        height: 100em;
+    }
+    
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px)  {
+    .section3 {
+        height: 285em;
+    }
+}
+
+.S3block1{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px #222;
+}
+
+
+.S3block1 h2 {
+    font-size: 50px;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 3px 3px 3px #222;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .S3block1 h2 {
+        font-size: 40px;
+    }
+}
+
+.S3block1 p {
+    font-family: 'Courier Prime', monospace;
+    font-size: 20px;
+}
+
+.S3block2 {
+    text-align: center;
+    color: white;
+}
+
+.three {
+    padding: 30px 0px 30px 0px;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px)  {
+    .three {
+        float: center;
+    }
+    .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+}
+
+
+.card {
+    float: center;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Aclonica', sans-serif;
+    color: white;
+    text-shadow: 3px 3px 3px #222;
+    background: rgb(1,39,58);
+    background: linear-gradient(8deg, rgba(1,39,58,1) 13%, rgba(1,30,45,1) 48%, rgba(0,21,31,1) 88%);
+    box-shadow: 3px 3px 3px black;
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card img {
+    box-shadow: 3px 3px 3px #222;
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .card{
+        width: 400px;
+    }
+}
+
+.card h3 {
+    padding-top: 10px;
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card a {
+        font-size: 10px;
+    }
+}
+.card a {
+    display: inline;
+    margin: 30px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.card a:hover {
+    color: #EF2085;
+    text-decoration: none;
+}
+
+
+.S3block3 {
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px #222;
+    padding: 20px;
+}
+
+.S3block3 h2 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 60px;
+}
+
+.cert {
+    width: 500px;
+    height: 400px;
+    box-shadow: 3px 3px 3px #222;
+}
+.cert:hover {
+    box-shadow: 3px 3px 3px #EF2085;
+    transform: translateY(-7px);
+}
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .cert {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+.S3block4 {
+    text-align: center;
+    font-family: 'Courier Prime', monospace;
+    font-size: 20px;
+    color:white;
+    padding: 15px;
+}
+
+
+/*END MAIN */
+.footer {
+    background-color: black;
+    height: 250px;
+}
+.hr1 {
+    border-top: 1px dotted #EF2085;
+}
+.hr-footer {
+    background-color: #EF2085;
+}
+.footerblock {
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.footerblock h2 {
+    text-shadow: 3px 3px 3px #222;
+}
+
+.sr-only{
+    display: hidden;
+}
+
+.footericon {
+    font-size: 50px;
+    color: #EF2085;
+}
+
+.footericon:hover {
+    color: rgba(1,45,29,1);
+}
+.colophon-text {
+    text-align: center;
+}
+
+/* About */
+.body2 {
+    background-image: url("../media/vines.jpg");
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 150px black;
+}
+
+.about1 {
+    height: 62em;
+}
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .about1 {
+        height: 75em;
+    }
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about1 {
+        height: 70em;
+    }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .about1 {
+        height: 100em;
+    }
+}
+
+.skills {
+    height: 25em;
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .skills {
+        height: 30em;
+    }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .skills {
+        height: 70em;
+    }
+}
+
+.software {
+    height: 25em;
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .software {
+        height: 35em;
+    }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .software {
+        height: 70em;
+    }
+}
+
+
+.aboutblock1 h2{ 
+    color: white;
+    font-size: 100px;
+    font-family: 'Aclonica', sans-serif;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-top: 100px;
+    text-shadow: 5px 5px 5px black;
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .aboutblock1 h2{
+        font-size: 80px;
+    }  
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .aboutblock1 h2 {
+        font-size: 60px;
+    }
+}
+
+
+.profilepic {
+    width: 300px;
+    display:inline-block;
+    margin:5% auto;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    line-height:1.5em;
+    background:hsla(67, 95%, 95%, 1);
+    border:solid 5px white;
+    position: relative;
+    left: 20%;
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .profilepic {
+        width: 250px;
+
+    }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .profilepic {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+}
+
+
+.bio {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding:1em;
+    line-height: 45px;
+    background:black;
+    position: relative;
+    top: 20px;
+    right: 6%;
+    box-shadow: 6px 6px 6px #222;
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px){
+    .bio {
+        width: 500px;
+        height: 780px;
+        position: relative;
+        right: 10px;
+    }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .bio{
+        position: relative;
+        text-align: center;
+    }
+}
+
+.bio p {
+    color: white;
+    font-family: 'Courier Prime', monospace;
+    text-shadow: 6px 6px 6px #222;
+    font-size: 20px;
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bio p {
+        font-size: 16px;
+    }
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .bio p {
+        font-size: 14px;
+    }
+}
+
+.bio a {
+    color: white;
+}
+
+.bio a:hover {
+    text-decoration: none;
+    color: white;
+    background-color:#EF2085;
+    padding: 10px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Aclonica', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    padding-bottom: 40px;
+}
+
+
+.rowskill, .rowsoft {
+    text-align: center;
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .iconss {
+        padding-bottom: 30px;
+    }
+}
+
+.rowskill span, .rowsoft span{
+    font-size: 150px;
+    text-shadow: 3px 3px 3px black;
+   
+}
+.rowskill span:hover, .rowsoft span:hover {
+    font-size: 200px;
+}
+
+.rowskill p, .rowsoft p {
+    font-size: 25px;
+    font-family: 'Aclonica', sans-serif;
+    color: white;
+    position: relative;
+    top: 20px;
+}
+
+.rowskill img:hover {
+    width: 200px;
+}
+
+.software h2 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 5px 5px 5px black;
+    padding-bottom: 40px;
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .software h2 {
+        font-size: 50px;
+    }
+}
+
+.foot-about {
+    height: 5em;
+}
+
+.foot-about h2 {
+    font-family: 'Aclonica', sans-serif;
+    color: white;
+    position: relative;
+    top: 20px;
+    right: 30%;
+}
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .foot-about h2 {
+        font-size: 25px;
+    }
+}
+
+.footericon2 {
+    font-size: 60px;
+    color: white;
+}
+
+.footericon2:hover {
+    color:#EF2085;
+}
+
+.footericon3 {
+    font-size: 55px;
+    color:white;
+    position: relative;
+    top: 4px;
+}
+
+.footericon3:hover {
+    color:#EF2085;
+}
