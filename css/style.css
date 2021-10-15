@@ -90,6 +90,12 @@
   .icon-xml:before {
     content: "\e905";
   }
+  .icon-arrow-down:before {
+    content: "\e90e";
+  }
+  .icon-arrow-up:before {
+    content: "\e90f";
+  }
 /* END ICON */
 * {
     box-sizing: border-box;
@@ -409,7 +415,7 @@ button:hover {
     text-shadow: 3px 3px 3px #222;
     background: rgb(1,39,58);
     background: linear-gradient(8deg, rgba(1,39,58,1) 13%, rgba(1,30,45,1) 48%, rgba(0,21,31,1) 88%);
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 3px 3px 3px #222;
 }
 
 .card h3 {
@@ -481,6 +487,9 @@ button:hover {
         width: 400px;
         height: 300px;
     }
+    .S3block3 {
+        float: right;
+    }
 }
 
 .S3block4 {
@@ -504,13 +513,12 @@ button:hover {
     background-color: #EF2085;
 }
 .footerblock {
-    text-align: center;
     font-family: 'Aclonica', sans-serif;
-    font-size: 60px;
     color: white;
 }
 
 .footerblock h2 {
+    
     text-shadow: 3px 3px 3px #222;
 }
 
@@ -764,18 +772,20 @@ button:hover {
     height: 5em;
 }
 
-.foot-about h2 {
+footer h2 {
     font-family: 'Aclonica', sans-serif;
     color: white;
     position: relative;
     top: 20px;
-    right: 30%;
+    right: 15%;
 }
 /*low resolution tablets, mobiles (landscape)*/
 @media (min-width: 481px) and (max-width: 767px) {
     .foot-about h2 {
-        font-size: 25px;
+        font-size: 20px;
+
     }
+
 }
 
 .footericon2 {
